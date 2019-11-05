@@ -27,7 +27,9 @@ node('slaves'){
 
     stage('Push'){
         sh """
+            docker run -d --name ${imageName} ${imageName}
             docker cp ${imageName}:/root/app main
+            docker rm ${imageName}
             zip -r ${commitID()}.zip .
             aws s3 cp ${commitID()}.zip s3://add-deployment-packages/
         """
