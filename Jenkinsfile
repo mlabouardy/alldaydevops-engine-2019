@@ -1,5 +1,6 @@
 def imageName = 'imdb-engine'
 def bucket = 'add-deployment-packages'
+def function = 'ADDiMDBEngine'
 
 node('slaves'){
     try {
