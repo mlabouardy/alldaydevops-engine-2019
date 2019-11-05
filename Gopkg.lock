@@ -2,12 +2,18 @@
 
 
 [[projects]]
-  digest = "1:cbec35fe4d5a4fba369a656a8cd65e244ea2c743007d8f6c1ccb132acf9d1296"
-  name = "github.com/gorilla/mux"
-  packages = ["."]
+  digest = "1:20114d717d92911b2e1adeae28e1e2740929a006abfd86526967feff429ba93b"
+  name = "github.com/aws/aws-lambda-go"
+  packages = [
+    "events",
+    "lambda",
+    "lambda/handlertrace",
+    "lambda/messages",
+    "lambdacontext",
+  ]
   pruneopts = "UT"
-  revision = "00bdffe0f3c77e27d2cf6f5c70232a2d3e4d9c15"
-  version = "v1.7.3"
+  revision = "e5086e5a7e53f7039034fa29008221760b04ff79"
+  version = "v1.13.2"
 
 [[projects]]
   branch = "master"
@@ -21,7 +27,8 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/gorilla/mux",
+    "github.com/aws/aws-lambda-go/events",
+    "github.com/aws/aws-lambda-go/lambda",
     "github.com/mlabouardy/imdb",
   ]
   solver-name = "gps-cdcl"
