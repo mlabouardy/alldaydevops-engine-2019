@@ -1,0 +1,10 @@
+FROM golang:1.10.1
+LABEL Maintainer mlabouardy
+
+WORKDIR /go/src/github.com/mlabouardy/imdb-engine
+
+COPY . .
+
+RUN go get -u github.com/golang/lint/golint
+
+CMD golint

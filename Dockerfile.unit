@@ -1,0 +1,8 @@
+FROM golang:1.10.1
+LABEL Maintainer mlabouardy
+
+WORKDIR /go/src/github.com/mlabouardy/imdb-engine
+
+COPY . .
+
+CMD go test
