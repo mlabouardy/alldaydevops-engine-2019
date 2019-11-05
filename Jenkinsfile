@@ -1,4 +1,4 @@
-def imageName = 'mlabouardy/imdb-engine'
+def imageName = 'imdb-engine'
 def bucket = 'add-deployment-packages'
 
 node('slaves'){
