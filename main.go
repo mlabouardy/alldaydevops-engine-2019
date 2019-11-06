@@ -26,7 +26,7 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 				"Access-Control-Allow-Origin":  "*",
 				"Access-Control-Allow-Headers": "*",
 			},
-			Body: "Couldn't find the movie",
+			Body: "Couldnt find the movie",
 		}, nil
 	}
 
